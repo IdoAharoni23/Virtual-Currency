@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 2- Ido Aharoni</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&display=swap');
+        .navbar-brand, li a {
+            color: #DEB83F;
+        }
+        
+    </style>
+</head>
+
+
+
+<body>
+
+
+  <div id="overlay">
+    <div style="width: 150px; height: 150px; vertical-align: middle; margin: 0 auto; margin-top: 40vh;">
+    <img src="loading-gif-png-5.gif" style="width: 150px; height: 150px;" alt="">
+    </div>
+  </div>
+
+
+  <div class="inputCoin"></div>
+
+
+  <div class="fiveCoinFav">
+    <div class="main-fav">
+      <div class="error">Error, you can select up to 5 coins, please cancel a previously selected coin!</div>
+      <div class="listOfCoins">
+      </div>
+      <button class="close-btn">Close</button>
+      </div>
+    </div>
+
+    
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand logo-navbar" href="#">WallBryce</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link home-navbar" href="#">Home</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link live-navbar" href="#">Live Reports</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link about-navbar" href="#">About</a>
+        </li>
+      </ul>
+      <div class="form-inline my-2 my-lg-0" id="blah_form">
+        <input class="text-navbar1 form-control mr-sm-2" placeholder="Search">
+        <button class=" search-navbar1 btn btn-outline-success my-2 my-sm-0" type=>Search</button>
+      </div>
+    </div>
+    <div class="hideNav" style="width: 100%; background-color: #f7f7f7; display: flex;
+  flex-direction: column;
+  align-items: center;">
+  <div class="home-navbar">Home</div>
+  <div class="live-navbar">Live Reports</div>
+  <div class="about-navbar">About</div>
+  <div>
+    <div class="form-inline my-2 my-lg-0" id="blah_form">
+      <input class="text-navbar form-control mr-sm-2" placeholder="Search" aria-label="Search">
+      <button class=" search-navbar btn btn-outline-success my-2 my-sm-0">Search</button>
+    </div>
+  </div>
+
+  </div>
+  </nav>
+
+  <div class="parallax">
+      <div> <span>WallBryce</span>   
+          <br> Scrolling Down And Start Compare Between Coins & See Live Changes
+      </div>
+  </div>
+
+
+  <div class="topic">Exchange rate of virtual coins</div>
+
+    <div class="main container-fluid">
+      <div class="coins row"></div>
+    </div>
+
+
+
+
+</body>
+</html>
+
+
+
+

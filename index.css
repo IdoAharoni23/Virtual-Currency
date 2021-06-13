@@ -1,0 +1,674 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+  font-family: sans-serif;
+  background: #f7f7f7;
+}
+
+.navbar{
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 80px;
+  background: #858b8d;
+  color: #DEB83F;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+}
+
+
+
+.form-inline{
+  display: flex;
+  margin-left: auto;
+}
+
+
+.logo-navbar{
+  font-family: 'Lobster Two', cursive !important;
+  padding-left: 10px;
+font-size: 30px;
+font-weight: bold !important;
+color: #DEB83F !important;
+
+}
+
+
+
+
+.search-navbar:hover, .search-navbar1:hover, .info:hover{
+  color: #fff !important;
+  background: #DEB83F !important;
+  border: 1px solid #DEB83F;
+}
+
+
+.text-navbar, .text-navbar1{
+margin-right: 10px;
+width: 50%;
+border: 3px solid #DEB83F;
+border-radius: 10px;
+height: 40%;
+background: #f7f7f7;
+color: #DEB83F;
+}
+.text-navbar1{ 
+  padding-right: 30px;
+}
+
+.search-navbar, .search-navbar1{
+  width: 25%;
+  border: 3px solid #DEB83F;
+  border-radius: 10px;
+  color: #DEB83F;
+  font-weight: bold;
+  font-size: 18px;
+  background: #f7f7f7;
+  text-align:center
+}
+.navbar-toggler{
+position: absolute;
+top: 3px;
+right: 30px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+
+.parallax {
+    background-image: url("https://cdn.pixabay.com/photo/2017/09/07/08/53/money-2724235__340.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+    justify-content:start;
+    align-items: center;
+    min-height: 500px;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  }
+
+  .parallax div  {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 45px;
+    color: #DEB83F;
+    width: 45vw;
+    margin-left: 10vw;
+    font-weight: bold;
+    margin-bottom: 7vh;
+}
+.parallax div span{
+  font-family: 'Lobster Two', cursive;
+  font-size: 80px;
+  color: #DEB83F;
+  font-weight: bold;
+}
+
+
+.logostyle{
+  font-family: 'Lobster Two', cursive;;
+}
+
+  .parallax h1 span{
+      font-size: 38px;
+      color: #DEB83F;
+      width: 50vw;
+  }
+
+
+ .topic{
+     color:#DEB83F;
+     ;
+     text-align: center;
+     font-size: 45px;
+     margin: 35px; }
+
+     
+.main{
+  margin: 0 auto;
+     }
+ .coins{
+   display: flex;
+   justify-content: space-around;
+
+  }
+.virtualCoin:hover{
+  box-shadow: 5px 7px 10px 1px #DEB83F;
+}
+
+ .virtualCoin{
+   color: #DEB83F;
+   margin-bottom: 20px;
+ 
+   height: 200px;
+   border: 3px solid #DEB83F;
+   border-radius: 10px;
+   display: grid;
+   grid-template-columns: 100%;
+   grid-template-rows: 33% 33% 34%;
+   grid-template-areas: "id",
+                        "symbol",
+                        "moreInfo" ;
+ }
+
+ .IdToggle{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+  align-items: center;
+ }
+
+ .Id{
+   margin-left: 10px;
+   font-size: 24px;
+   font-weight: bold;
+
+
+ }
+
+ .main-toggle1{
+ 
+  transform: translate(-50%, -50%);
+
+}
+
+.toggle-btn{
+  width: 40px;
+  height: 20px;
+  background: grey;
+  border-radius: 15px;
+  padding: 3px;
+
+}
+
+.toggle-btn > .inner-circle{
+  width: 15px;
+  height: 15px;
+  background: #fff;
+  border-radius: 50%;
+  transition: 0.3s;
+
+
+}
+
+.toggle-btn.active{
+  background: #00acee;
+
+}
+
+.toggle-btn.active > .inner-circle{
+  margin-left: 18px;
+  transition: 0.3s;
+
+}
+
+
+ .symbol{
+   grid-area: "symbol";
+   align-self: center;
+   margin-left: 10px;
+   font-size: 22px;
+
+
+
+ }
+
+ .moreInfo{
+   grid-area: "moreInfo";
+   align-self: center;
+  margin-left: 10px;
+  font-size: 22px;
+ }
+
+ .moreInfo button{
+   padding: 10px 15px;
+   border: 2px solid #DEB83F;
+   border-radius: 5px;
+   color: #DEB83F;
+   background: #f7f7f7;
+ }
+
+
+.moreInfoCoin{
+  color: #DEB83F;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  height: 200px;
+
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 20% 35% 45%;
+  grid-template-areas: "name",
+                       "forImg",
+                       "rate" ;
+  position: relative;
+}
+
+.topInfo{
+  width: 100%;
+grid-area: "name";
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+}
+
+.name{
+margin-left: 15px;
+font-size: 24px;
+font-weight: bold;
+}
+
+.cls-btn{
+  position: absolute;
+  right: 10px;
+  top: 5px;
+height: 25px;
+width: 25px;
+border: 2px solid #DEB83F;
+border-radius: 50%;
+color: #DEB83F;
+background: #f7f7f7;
+}
+
+.forImg{
+  grid-area: "forImg";
+  display: flex;
+  align-items: center;
+
+}
+
+.img{
+background-image: url("https://media.istockphoto.com/photos/concept-save-money-financial-business-investment-coins-stack-with-picture-id1198141048?b=1&k=6&m=1198141048&s=170667a&w=0&h=BCG-9uoE5Sb7Nk4GlwoDflhmRksjSVrBO9k1CMcN-kk=");
+height: 100%;
+width: 100%;
+border: 1px solid black;
+
+}
+
+.rate{
+  margin-left: 10px;
+  grid-area: "rate";
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+}
+
+.usd{
+  grid-area: "usd";
+
+}
+
+.euro{
+  grid-area: "euro";
+
+}
+
+.nis{
+  grid-area: "nis";
+
+}
+
+#overlay {
+  position: fixed; 
+  display: none; 
+  width: 100%; 
+  height: 100%; 
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5); 
+  z-index: 2; 
+  cursor: pointer; 
+}
+
+
+.about-main{
+  position: fixed; 
+  display: none; 
+  width: 100%; 
+  height: 100%; 
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5); 
+  z-index: 2; 
+  cursor: pointer; 
+}
+
+
+
+.about{
+  width: 70vw;
+  height: 65vh;
+  background: #DEB83F;
+  margin: 0 auto;
+  margin-top: 5vh;
+  border: 8px solid #DEB83F;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 25px;
+  margin-bottom: 10%;
+
+}
+.about h1{
+  font-weight: bold;
+  font-family: 'Lobster Two', cursive;
+}
+
+.about div{
+  font-size: 150%;
+}
+
+.about img{
+  width: 30%;
+  height: 30%;
+
+}   
+
+.fiveCoinFav{
+  position: fixed; 
+  display: none; 
+  width: 100%; 
+  height: 100%; 
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5); 
+  z-index: 2; 
+  cursor:auto; 
+}
+
+.main-fav{
+  width: 50vw;
+  height: 60vh;
+  background: #DEB83F;
+  margin: 0 auto;
+  margin-top: 35vh;
+  border: 8px solid #DEB83F;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content:start;
+  padding: 25px;
+
+}
+
+.error{
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  width: 100%;
+  height: 25%;
+}
+
+.listOfCoins{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.favoriteCoin{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 18px;
+  margin-bottom: 20px;
+  align-items: center;
+  font-size: 22px;
+  text-align: left;
+}
+
+.toggle-btn-favorite{
+  transform: translate(-50%, -50%);
+  position: relative;
+  margin-top: 20px;
+
+}
+
+.close-btn{
+  background-color: #f7f7f7;
+  border: 2px solid #DEB83F;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 18px;
+  color: #DEB83F;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.inputCoin{
+  position: fixed; 
+  display: none; 
+  width: 100%; 
+  height: 100%; 
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5); 
+  z-index: 2; 
+  cursor:auto; 
+}
+
+
+
+
+.virtualCoinInput{
+  background-color: #f7f7f7;
+  color: #DEB83F;
+   margin-bottom: 20px;
+   margin-left: 20px;
+   width: 300px;
+   height: 200px;
+   border: 3px solid #DEB83F;
+   border-radius: 10px;
+   display: grid;
+   grid-template-columns: 100%;
+   grid-template-rows: 33% 33% 34%;
+   grid-template-areas: "id",
+                        "symbol",
+                        "moreInfo" ;
+   justify-self: center;     
+   z-index: 3;
+   margin: 0 auto; 
+   margin-top: 40vh;               
+}
+
+.moreInfoInput{
+  grid-area: "moreInfo";
+  align-self: center;
+ margin-left: 10px;
+}
+
+
+
+.moreInfoInput button{
+  padding: 10px 15px;
+  border: 2px solid #DEB83F;
+  border-radius: 5px;
+  color: #DEB83F;
+  background: #f7f7f7;
+}
+
+.virtualCoinInput  .moreInfoInput{
+  display:flex ;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.close-about{
+  background-color: #f7f7f7;
+  border: 2px solid #DEB83F;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 18px;
+  color: #DEB83F;
+  width: 50%;
+  margin: 0 auto;
+}
+
+
+
+.main-toggle1{
+  transform: translate(-50%, -50%);
+
+}
+
+.toggle-btn1{
+  width: 40px;
+  height: 20px;
+  background: grey;
+  border-radius: 15px;
+  padding: 3px;
+
+}
+
+.toggle-btn1 > .inner-circle{
+  width: 15px;
+  height: 15px;
+  background: #fff;
+  border-radius: 50%;
+  transition: 0.3s;
+
+
+}
+
+.toggle-btn1.active1{
+  background: #00acee;
+
+}
+
+.toggle-btn1.active1 > .inner-circle{
+  margin-left: 15px;
+  transition: 0.3s;
+
+}
+
+
+
+
+
+@media only screen and (min-width:1101px) {
+.virtualCoin{
+  margin-left: 10px;
+}
+
+  .home-navbar{
+font-size: 22px;
+  }
+
+  .live-navbar{
+font-size: 22px;
+  }
+
+  .about-navbar{
+font-size: 22px;
+  }
+
+  .text-navbar{
+font-size: 22px;
+  }
+  .search-navbar{
+font-size: 22px;
+  }
+  
+}
+
+@media only screen and (max-width:1100px) {
+
+  .virtualCoin{
+    margin-left: 8px;
+  }
+
+  .home-navbar{
+font-size: 22px;
+margin: left px; ;
+  }
+
+  .live-navbar{
+font-size: 22px;
+margin: left 5px; ;
+  }
+
+  .about-navbar{
+font-size: 22px;
+margin: left 5px; ;
+  }
+
+  .text-navbar{
+font-size: 22px;
+margin: left 5px; ;
+  }
+  .search-navbar{
+font-size: 22px;
+margin: left 5px; ;
+  }
+  
+}
+
+
+@media only screen and (max-width:960px) {
+
+  
+  .parallax div  {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 35px;
+    color: #DEB83F;
+    width: 70vw;
+    margin-left: 10vw;
+    font-weight: bold;
+    margin-bottom: 7vh;
+}
+.parallax div span{
+  font-family: 'Lobster Two', cursive;
+  font-size: 60px;
+  color: #DEB83F;
+  font-weight: bold;
+}
+  
+  
+}
+
+
+@media only screen and (max-width:740px) {
+
+  .parallax div  {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    color: #DEB83F;
+    width: 80vw;
+    margin-left: 10vw;
+    font-weight: bold;
+    margin-bottom: 7vh;
+}
+.parallax div span{
+  font-family: 'Lobster Two', cursive;
+  font-size: 45px;
+  color: #DEB83F;
+  font-weight: bold;
+}
+
+}
+
+
+
+
+
